@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nhóm 10 - Các Ngành Hot Nhất 2025</title>
+    <link rel="stylesheet" href="./css/thongbao.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <video class="video-bg" autoplay muted loop>
+      <source src="background-video.mp4" type="video/mp4" />
+    </video>
+    <div class="overlay"></div>
+    <canvas id="particles"></canvas>
+
+    <header>
+      <div class="logo">Nhóm 10</div>
+      <nav>
+        <div class="menu-toggle">☰</div>
+        <ul class="nav-links">
+          <li><a href="home.html">Trang chủ</a></li>
+          <li><a href="#jobs">Việc làm</a></li>
+          <li><a href="#hot-industries" class="active">Các ngành hot</a></li>
+          <li><a href="#contact">Liên hệ</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="notifications-section" id="hot-industries">
+      <h1>Các Ngành Hot Nhất 2025</h1>
+      <div class="notification-list">
+        <div class="notification-card">
+          <img src="frontend.jpg" alt="Lập trình viên Frontend" />
+          <h3>Lập trình viên Frontend</h3>
+          <p>
+            Thiết kế giao diện người dùng, tối ưu trải nghiệm web với HTML, CSS,
+            JavaScript và các framework như React.
+          </p>
+          <p>
+            <i class="fas fa-money-bill-wave"></i> Mức lương: 15-30M VND/tháng
+          </p>
+          <p>
+            <i class="fas fa-chart-line"></i> Triển vọng: Nhu cầu cao nhờ sự
+            phát triển của ứng dụng web và mobile.
+          </p>
+        </div>
+        <div class="notification-card">
+          <img src="backend.jpg" alt="Kỹ sư Backend" />
+          <h3>Kỹ sư Backend</h3>
+          <p>
+            Xây dựng hệ thống server, cơ sở dữ liệu và API với Python, Java,
+            Node.js, đảm bảo ứng dụng ổn định.
+          </p>
+          <p>
+            <i class="fas fa-money-bill-wave"></i> Mức lương: 18-35M VND/tháng
+          </p>
+          <p>
+            <i class="fas fa-chart-line"></i> Triển vọng: Thiết yếu cho mọi nền
+            tảng số, đặc biệt là thương mại điện tử.
+          </p>
+        </div>
+        <div class="notification-card">
+          <img src="architecture.jpg" alt="Kiến trúc sư" />
+          <h3>Kiến trúc sư</h3>
+          <p>
+            Thiết kế công trình bền vững, sáng tạo không gian với AutoCAD,
+            Revit, đáp ứng xu hướng đô thị hóa.
+          </p>
+          <p>
+            <i class="fas fa-money-bill-wave"></i> Mức lương: 20-40M VND/tháng
+          </p>
+          <p>
+            <i class="fas fa-chart-line"></i> Triển vọng: Tăng trưởng nhờ các dự
+            án nhà ở xanh và đô thị thông minh.
+          </p>
+        </div>
+        <div class="notification-card">
+          <img src="finance.jpg" alt="Chuyên viên tài chính" />
+          <h3>Chuyên viên tài chính</h3>
+          <p>
+            Phân tích đầu tư, quản lý ngân sách trong ngân hàng, chứng khoán,
+            giúp doanh nghiệp tối ưu tài chính.
+          </p>
+          <p>
+            <i class="fas fa-money-bill-wave"></i> Mức lương: 15-35M VND/tháng
+          </p>
+          <p>
+            <i class="fas fa-chart-line"></i> Triển vọng: Nhu cầu ổn định trong
+            mọi lĩnh vực kinh tế.
+          </p>
+        </div>
+        <div class="notification-card">
+          <img src="marketing.jpg" alt="Chuyên viên marketing" />
+          <h3>Chuyên viên marketing</h3>
+          <p>
+            Xây dựng chiến lược quảng bá, nghiên cứu thị trường, sáng tạo nội
+            dung để thu hút khách hàng.
+          </p>
+          <p>
+            <i class="fas fa-money-bill-wave"></i> Mức lương: 12-30M VND/tháng
+          </p>
+          <p>
+            <i class="fas fa-chart-line"></i> Triển vọng: Phát triển mạnh nhờ
+            quảng cáo số và thương hiệu cá nhân.
+          </p>
+        </div>
+        <div class="notification-card">
+          <img src="logistics.jpg" alt="Quản lý logistics" />
+          <h3>Quản lý logistics</h3>
+          <p>
+            Tối ưu chuỗi cung ứng, vận hành kho bãi với công nghệ hiện đại, đáp
+            ứng thương mại điện tử.
+          </p>
+          <p>
+            <i class="fas fa-money-bill-wave"></i> Mức lương: 15-35M VND/tháng
+          </p>
+          <p>
+            <i class="fas fa-chart-line"></i> Triển vọng: Tăng trưởng nhanh nhờ
+            toàn cầu hóa và e-commerce.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact">
+      <div class="contact-info">
+        <h3>Liên hệ với chúng tôi</h3>
+        <div class="contact-container">
+          <div class="contact-left">
+            <p>
+              <i class="fas fa-phone"></i>Số điện thoại:
+              <span class="highlight">+84 963176945</span>
+            </p>
+            <p>
+              <i class="fas fa-envelope"></i>Gmail:
+              <span class="highlight">[email protected]</span>
+            </p>
+          </div>
+          <div class="social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+          <div class="contact-right">
+            <p>
+              <i class="fas fa-map-marker-alt"></i>Địa chỉ:
+              <span class="highlight">Phường Hiệp Thành, TDM, BD</span>
+            </p>
+            <p>
+              <i class="fas fa-envelope"></i>Liên hệ:
+              <span class="highlight">[email protected]</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <p class="footer-copyright">© 2025 Nhóm 10. All rights reserved.</p>
+    </footer>
+
+    <script src="./js/thongbao.js"></script>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

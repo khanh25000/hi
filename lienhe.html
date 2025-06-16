@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nhóm 11 - Liên hệ</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/lienhe.css" />
+  </head>
+  <body>
+    <video class="video-bg" autoplay muted loop>
+      <source
+        src="https://xaiassets.s3.amazonaws.com/videos/particles.mp4"
+        type="video/mp4"
+      />
+    </video>
+    <div class="overlay"></div>
+    <canvas id="particles"></canvas>
+
+    <header>
+      <img src="./img/logo.jpg" alt="Logo" class="logo-img" />
+      <nav>
+        <div class="menu-toggle">☰</div>
+        <ul class="nav-links">
+          <li><a href="./home.html">Trang chủ</a></li>
+          <li><a href="./job.html">Việc làm</a></li>
+          <li><a href="./kinhnghiem.html">Kinh nghiệm</a></li>
+          <li><a href="./lienhe.html" class="active">Liên hệ</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="contact-section">
+      <div class="content-container">
+        <h1>Liên Hệ Với Nhóm 11</h1>
+        <div class="contact-wrapper">
+          <div class="contact-form">
+            <h2>Gửi Tin Nhắn Cho Chúng Tôi</h2>
+            <form id="contact-form">
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  placeholder=" "
+                />
+                <label for="name">Họ và tên</label>
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder=" "
+                />
+                <label for="email">Email</label>
+              </div>
+              <div class="form-group">
+                <input type="tel" id="phone" name="phone" placeholder=" " />
+                <label for="phone">Số điện thoại</label>
+              </div>
+              <div class="form-group">
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                  placeholder=" "
+                ></textarea>
+                <label for="message">Tin nhắn</label>
+              </div>
+              <button type="submit" class="submit-btn">Gửi Tin Nhắn</button>
+            </form>
+            <p id="form-message" class="form-message"></p>
+          </div>
+          <div class="map-container">
+            <h2>Địa Chỉ Của Chúng Tôi</h2>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.658159673664!2d106.6772876147574!3d10.982813992186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d89f1e9e7e3f%3A0x6d6d6d6d6d6d6d6d!2sPh%C6%B0%E1%BB%9Dng%20Hi%E1%BB%87p%20Th%C3%A0nh%2C%20Th%E1%BB%A7%20D%E1%BA%A7u%20M%E1%BB%99t%2C%20B%C3%ACnh%20D%C6%B0%C6%A1ng%2C%20Vietnam!5e0!3m2!1sen!2s!4v1697664321987!5m2!1sen!2s"
+              width="100%"
+              height="400"
+              style="border: 0; border-radius: 12px"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="contact-info">
+        <h3>Liên hệ với chúng tôi</h3>
+        <div class="contact-container">
+          <div class="contact-left">
+            <p>
+              <i class="fas fa-phone"></i> Số điện thoại:
+              <span class="highlight">+84 963176945</span>
+            </p>
+            <p>
+              <i class="fas fa-envelope"></i> Gmail:
+              <span class="highlight"
+                ><a
+                  href="/cdn-cgi/l/email-protection"
+                  class="__cf_email__"
+                  data-cfemail="a49697949194959193e4d7d0d1c0c1cad08ac6c0d18ac1c0d18ad2ca"
+                  >[email&#160;protected]</a
+                ></span
+              >
+            </p>
+          </div>
+          <div class="social">
+            <a><i class="fab fa-facebook-f"></i></a>
+            <a><i class="fa-brands fa-github"></i></a>
+            <a><i class="fa-brands fa-youtube"></i></a>
+          </div>
+          <div class="contact-right">
+            <p>
+              <i class="fas fa-map-marker-alt"></i> Địa chỉ:
+              <span class="highlight">Phường Hiệp Thành, TDM, BD</span>
+            </p>
+            <p>
+              <i class="fas fa-envelope"></i> Liên hệ:
+              <span class="highlight"
+                ><a
+                  href="/cdn-cgi/l/email-protection"
+                  class="__cf_email__"
+                  data-cfemail="14777b7a60757760547a7c7b7925243a777b79"
+                  >[email&#160;protected]</a
+                ></span
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">© 2025 DuyKhanh. All rights reserved.</div>
+    </footer>
+
+    <script
+      data-cfasync="false"
+      src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+      // Khởi tạo EmailJS
+      (function () {
+        emailjs.init("YOUR_EMAILJS_USER_ID"); // Thay bằng User ID thực của bạn
+      })();
+    </script>
+    <script src="./js/lienhe.js"></script>
+    <script>
+      (function () {
+        function c() {
+          var b = a.contentDocument || a.contentWindow.document;
+          if (b) {
+            var d = b.createElement("script");
+            d.innerHTML =
+              "window.__CF$cv$params={r:'9503ca673ceea61c',t:'MTc1MDAwODU3Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
+            b.getElementsByTagName("head")[0].appendChild(d);
+          }
+        }
+        if (document.body) {
+          var a = document.createElement("iframe");
+          a.height = 1;
+          a.width = 1;
+          a.style.position = "absolute";
+          a.style.top = 0;
+          a.style.left = 0;
+          a.style.border = "none";
+          a.style.visibility = "hidden";
+          document.body.appendChild(a);
+          if ("loading" !== document.readyState) c();
+          else if (window.addEventListener)
+            document.addEventListener("DOMContentLoaded", c);
+          else {
+            var e = document.onreadystatechange || function () {};
+            document.onreadystatechange = function (b) {
+              e(b);
+              "loading" !== document.readyState &&
+                ((document.onreadystatechange = e), c());
+            };
+          }
+        }
+      })();
+    </script>
+  </body>
+</html>

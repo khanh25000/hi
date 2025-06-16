@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Danh Sách Việc Làm</title>
+    <link rel="stylesheet" href="./css/job.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <video autoplay muted loop class="video-bg">
+      <source
+        src="https://video.wixstatic.com/video/11062b_ae394985da534e54a796b408b4f4f095/1080p/mp4/file.mp4"
+        type="video/mp4"
+      />
+    </video>
+    <div class="overlay"></div>
+    <canvas id="particles"></canvas>
+
+    <header>
+      <img src="./img/logo.jpg" alt="Logo" class="logo-img" />
+      <nav>
+        <div class="menu-toggle">☰</div>
+        <ul class="nav-links">
+          <li><a href="./home.html">Trang chủ</a></li>
+          <li><a href="./job.html" class="active">Việc làm</a></li>
+          <li><a href="./kinhnghiem.html">Kinh nghiệm</a></li>
+          <li><a href="./lienhe.html">Liên hệ</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="jobs-section" id="jobs">
+      <h1>Danh Sách Việc Làm</h1>
+      <div class="search-bar">
+        <select id="search-location">
+          <option value="">Tất cả địa điểm</option>
+          <option value="Hà Nội">Hà Nội</option>
+          <option value="TP.HCM">TP.HCM</option>
+          <option value="Đà Nẵng">Đà Nẵng</option>
+        </select>
+        <select id="search-major">
+          <option value="">Tất cả ngành</option>
+          <option value="Công nghệ thông tin">Công nghệ thông tin</option>
+          <option value="Kiến trúc">Kiến trúc</option>
+          <option value="Kinh tế">Kinh tế</option>
+          <option value="Marketing">Marketing</option>
+          <option value="Logistics">Logistics</option>
+        </select>
+        <button id="search-btn">Tìm kiếm</button>
+      </div>
+
+      <div class="job-list">
+        <div class="job-card" data-job-id="1">
+          <img src="./img/frontend.jpg" alt="Frontend" />
+          <h3>Lập trình viên Frontend</h3>
+          <div class="related-jobs">
+            <h4>Việc liên quan</h4>
+            <ul>
+              <li>Lập trình viên Backend</li>
+              <li>Kỹ sư AI</li>
+              <li>Chuyên viên an ninh mạng</li>
+              <li>Nhà phân tích dữ liệu</li>
+            </ul>
+          </div>
+          <button data-job-id="1">Giới thiệu</button>
+        </div>
+
+        <div class="job-card" data-job-id="2">
+          <img src="./img/Backend.png" alt="Backend" />
+          <h3>Kỹ sư Backend</h3>
+          <div class="related-jobs">
+            <h4>Việc liên quan</h4>
+            <ul>
+              <li>Lập trình viên Frontend</li>
+              <li>Kỹ sư DevOps</li>
+              <li>Chuyên viên cơ sở dữ liệu</li>
+              <li>Kỹ sư phần mềm</li>
+            </ul>
+          </div>
+          <button data-job-id="2">Giới thiệu</button>
+        </div>
+
+        <div class="job-card" data-job-id="3">
+          <img src="./img/ktrucsu.jpg" alt="Architecture" />
+          <h3>Kiến trúc sư</h3>
+          <div class="related-jobs">
+            <h4>Việc liên quan</h4>
+            <ul>
+              <li>Thiết kế nội thất</li>
+              <li>Kỹ sư xây dựng</li>
+              <li>Quy hoạch đô thị</li>
+              <li>Thiết kế cảnh quan</li>
+            </ul>
+          </div>
+          <button data-job-id="3">Giới thiệu</button>
+        </div>
+
+        <div class="job-card" data-job-id="4">
+          <img src="./img/taichinh.jpg" alt="Finance" />
+          <h3>Chuyên viên tài chính</h3>
+          <div class="related-jobs">
+            <h4>Việc liên quan</h4>
+            <ul>
+              <li>Kế toán trưởng</li>
+              <li>Nhà phân tích đầu tư</li>
+              <li>Chuyên viên ngân hàng</li>
+              <li>Quản lý rủi ro</li>
+            </ul>
+          </div>
+          <button data-job-id="4">Giới thiệu</button>
+        </div>
+
+        <div class="job-card" data-job-id="5">
+          <img src="./img/marketing.jpg" alt="Marketing" />
+          <h3>Chuyên viên marketing</h3>
+          <div class="related-jobs">
+            <h4>Việc liên quan</h4>
+            <ul>
+              <li>Quản lý thương hiệu</li>
+              <li>Chuyên viên SEO</li>
+              <li>Nhà phân tích thị trường</li>
+              <li>Chuyên viên quảng cáo</li>
+            </ul>
+          </div>
+          <button data-job-id="5">Giới thiệu</button>
+        </div>
+
+        <div class="job-card" data-job-id="6">
+          <img src="./img/lgt.jpg" alt="Logistics" />
+          <h3>Quản lý logistics</h3>
+          <div class="related-jobs">
+            <h4>Việc liên quan</h4>
+            <ul>
+              <li>Chuyên viên kho bãi</li>
+              <li>Kỹ sư chuỗi cung ứng</li>
+              <li>Quản lý vận tải</li>
+              <li>Chuyên viên xuất nhập khẩu</li>
+            </ul>
+          </div>
+          <button data-job-id="6">Giới thiệu</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="modal" id="job-modal">
+      <div class="modal-content">
+        <span class="close-btn">×</span>
+        <h3 id="modal-title">Vị trí</h3>
+        <p id="modal-location">Địa điểm</p>
+        <p id="modal-salary">Mức lương</p>
+        <p id="modal-phone">Số điện thoại</p>
+        <a href="./lienhe.html" class="contact-button">Liên hệ</a>
+      </div>
+    </div>
+
+    <footer>
+      <div class="contact-info">
+        <h3>Liên hệ với chúng tôi</h3>
+        <div class="contact-container">
+          <div class="contact-left">
+            <p>
+              <i class="fas fa-phone"></i> Số điện thoại:
+              <span class="highlight">+84 963176945</span>
+            </p>
+            <p>
+              <i class="fas fa-envelope"></i> Gmail:
+              <span class="highlight">23050157@student.bdu.edu.vn</span>
+            </p>
+          </div>
+          <div class="social">
+            <a><i class="fab fa-facebook-f"></i></a>
+            <a><i class="fa-brands fa-github"></i></a>
+            <a><i class="fa-brands fa-youtube"></i></a>
+          </div>
+          <div class="contact-right">
+            <p>
+              <i class="fas fa-map-marker-alt"></i> Địa chỉ:
+              <span class="highlight">Phường Hiệp Thành, TDM, BD</span>
+            </p>
+            <p>
+              <i class="fas fa-envelope"></i> Liên hệ:
+              <span class="highlight">contact@nhom10.com</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">© 2025 DuyKhanh. All rights reserved.</div>
+    </footer>
+
+    <script src="./js/job.js"></script>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

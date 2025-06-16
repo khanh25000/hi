@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kinh Nghiệm - Nhóm 10</title>
+    <link rel="stylesheet" href="./css/kinhnghiem.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="./js/kinhnghiem.js" defer></script>
+  </head>
+  <body>
+    <video autoplay muted loop class="video-bg">
+      <source src="background-video.mp4" type="video/mp4" />
+    </video>
+    <div class="overlay"></div>
+    <canvas id="particles"></canvas>
+
+    <header>
+      <img src="./img/logo.jpg" alt="Logo" class="logo-img" />
+      <nav>
+        <div class="menu-toggle">☰</div>
+        <ul class="nav-links">
+          <li><a href="./home.html">Trang chủ</a></li>
+          <li><a href="./job.html">Việc làm</a></li>
+          <li><a href="./kinhnghiem.html" class="active">Kinh nghiệm</a></li>
+          <li><a href="./lienhe.html">Liên hệ</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <div class="content-container">
+        <div class="welcome-section">
+          <h1>Kinh Nghiệm Từ Chuyên Gia</h1>
+        </div>
+        <div class="experience-section">
+          <div class="experience-container">
+            <div class="experience-card">
+              <img
+                src="./img/nmd.jpg"
+                alt="Frontend Developer"
+                class="card-image"
+              />
+              <div class="card-content">
+                <div class="author-info">
+                  <h3>Nguyễn Minh Đức</h3>
+                  <p>Senior Frontend Developer tại VNG</p>
+                  <p>Ngày đăng: 09/06/2025</p>
+                </div>
+                <div class="experience-text">
+                  <p>
+                    Hiểu vững HTML, CSS và JavaScript gốc. Framework có thể thay
+                    đổi (React, Vue, Angular), nhưng nền tảng là mãi mãi. Luôn
+                    viết code có thể bảo trì.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="experience-card">
+              <img
+                src="./img/tqh.jpg"
+                alt="Backend Engineer"
+                class="card-image"
+              />
+              <div class="card-content">
+                <div class="author-info">
+                  <h3>Trần Quốc Huy</h3>
+                  <p>Backend Engineer tại Shopee</p>
+                  <p>Ngày đăng: 08/06/2025</p>
+                </div>
+                <div class="experience-text">
+                  <p>
+                    Tập trung vào thiết kế hệ thống. Hiểu RESTful API,
+                    microservices, message queue (Kafka, RabbitMQ) và database
+                    (SQL, NoSQL).
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="experience-card">
+              <img
+                src="./img/pta.jpg"
+                alt="Solutions Architect"
+                class="card-image"
+              />
+              <div class="card-content">
+                <div class="author-info">
+                  <h3>Phạm Thế Anh</h3>
+                  <p>Solutions Architect tại FPT Software</p>
+                  <p>Ngày đăng: 07/06/2025</p>
+                </div>
+                <div class="experience-text">
+                  <p>
+                    Đơn giản là tối thượng. Giải pháp đơn giản dễ mở rộng và bảo
+                    trì hơn những thứ phức tạp không cần thiết.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="experience-card">
+              <img
+                src="./img/ntm.jpg"
+                alt="Financial Analyst"
+                class="card-image"
+              />
+              <div class="card-content">
+                <div class="author-info">
+                  <h3>Nguyễn Thị Mai</h3>
+                  <p>CFA, Financial Analyst tại HSBC</p>
+                  <p>Ngày đăng: 06/06/2025</p>
+                </div>
+                <div class="experience-text">
+                  <p>
+                    Tư duy phân tích quyết định tất cả. Đừng chỉ nhìn số liệu,
+                    hãy hỏi “Tại sao?”, “Điều này có ý nghĩa gì?”.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="experience-card">
+              <img
+                src="./img/ltt.jpg"
+                alt="Marketing Manager"
+                class="card-image"
+              />
+              <div class="card-content">
+                <div class="author-info">
+                  <h3>Lê Thùy Trang</h3>
+                  <p>Digital Marketing Manager tại Tiki</p>
+                  <p>Ngày đăng: 05/06/2025</p>
+                </div>
+                <div class="experience-text">
+                  <p>
+                    Sáng tạo nhưng phải đo lường. Mọi chiến dịch đều cần KPI rõ
+                    ràng (ROAS, CAC, CTR...).
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="experience-card">
+              <img
+                src="./img/hvd.jpg"
+                alt="Logistics Manager"
+                class="card-image"
+              />
+              <div class="card-content">
+                <div class="author-info">
+                  <h3>Hoàng Văn Duy</h3>
+                  <p>Logistics Manager tại Lazada Vietnam</p>
+                  <p>Ngày đăng: 04/06/2025</p>
+                </div>
+                <div class="experience-text">
+                  <p>
+                    Luôn có phương án dự phòng. Hỏng xe, chậm trễ, thiên tai -
+                    rủi ro luôn xảy ra.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="contact-info">
+        <h3>Liên hệ với chúng tôi</h3>
+        <div class="contact-container">
+          <div class="contact-left">
+            <p>
+              <i class="fas fa-phone"></i> Số điện thoại:
+              <span class="highlight">+84 963176945</span>
+            </p>
+            <p>
+              <i class="fas fa-envelope"></i> Gmail:
+              <span class="highlight">nhom10@gmail.com</span>
+            </p>
+          </div>
+          <div class="social">
+            <a><i class="fab fa-facebook-f"></i></a>
+            <a><i class="fa-brands fa-github"></i></a>
+            <a><i class="fa-brands fa-youtube"></i></a>
+          </div>
+          <div class="contact-right">
+            <p>
+              Địa chỉ:
+              <span class="highlight">Phường Hiệp Thành, TDM, BD</span>
+              <i class="fas fa-map-marker-alt"></i>
+            </p>
+            <p>
+              Liên hệ: <span class="highlight">nhom10@gmail.com</span>
+              <i class="fas fa-envelope"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">© 2025 DuyKhanh. All rights reserved.</div>
+    </footer>
+  </body>
+</html>

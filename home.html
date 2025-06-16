@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nhóm 10 - Cổng thông tin việc làm</title>
+    <link rel="stylesheet" href="./css/home.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <video class="video-bg" autoplay muted loop>
+      <source src="background-video.mp4" type="video/mp4" />
+    </video>
+    <div class="overlay"></div>
+    <canvas id="particles"></canvas>
+
+    <header>
+      <img src="./img/logo.jpg" alt="Logo" class="logo-img" />
+      <nav>
+        <div class="menu-toggle">☰</div>
+        <ul class="nav-links">
+          <li><a href="./home.html" class="active">Trang chủ</a></li>
+          <li><a href="./job.html">Việc làm</a></li>
+          <li><a href="./kinhnghiem.html">Kinh nghiệm</a></li>
+          <li><a href="./lienhe.html">Liên hệ</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="main-content" id="home">
+      <div class="content-container">
+        <div class="welcome-section">
+          <h1>Chào mừng đến Nhóm 10</h1>
+        </div>
+
+        <div class="content-wrapper">
+          <div class="image-section">
+            <img src="./img/logo1.jpg" alt="Main Image" class="main-image" />
+          </div>
+          <div class="intro-section">
+            <h2>Giới thiệu trang web</h2>
+            <p>
+              Ứng dụng web cổng thông tin việc làm là nền tảng giúp kết nối nhà
+              tuyển dụng và người tìm việc. Hệ thống cho phép đăng tin tuyển
+              dụng, đăng ký ứng tuyển, tìm kiếm địa chỉ để nộp hồ sơ, góp phần
+              tối ưu hóa quá trình tuyển dụng và tìm việc nhanh chóng, hiệu quả.
+            </p>
+          </div>
+        </div>
+
+        <div class="industry-details">
+          <h3><a href="./job.html">Chi tiết các ngành</a></h3>
+        </div>
+
+        <div class="hot-industries">
+          <h3>Các ngành hot hiện nay</h3>
+          <div class="industries-container">
+            <div class="industry-item">
+              <img
+                src="./img/frontend.jpg"
+                alt="Frontend"
+                class="industry-image"
+              />
+              <h4>Lập trình viên Frontend</h4>
+              <p>Thiết kế giao diện người dùng, tối ưu trải nghiệm web.</p>
+              <button class="intro-button" data-modal="modal-frontend">
+                Giới thiệu
+              </button>
+            </div>
+            <div class="industry-item">
+              <img
+                src="./img/Backend.png"
+                alt="Backend"
+                class="industry-image"
+              />
+              <h4>Kỹ sư Backend</h4>
+              <p>Xây dựng hệ thống server, cơ sở dữ liệu hiệu quả.</p>
+              <button class="intro-button" data-modal="modal-backend">
+                Giới thiệu
+              </button>
+            </div>
+            <div class="industry-item">
+              <img
+                src="./img/ktrucsu.jpg"
+                alt="Architecture"
+                class="industry-image"
+              />
+              <h4>Kiến trúc sư</h4>
+              <p>Thiết kế công trình bền vững, sáng tạo không gian.</p>
+              <button class="intro-button" data-modal="modal-architecture">
+                Giới thiệu
+              </button>
+            </div>
+            <div class="industry-item">
+              <img
+                src="./img/taichinh.jpg"
+                alt="Finance"
+                class="industry-image"
+              />
+              <h4>Chuyên viên tài chính</h4>
+              <p>Phân tích đầu tư, quản lý tài chính doanh nghiệp.</p>
+              <button class="intro-button" data-modal="modal-finance">
+                Giới thiệu
+              </button>
+            </div>
+            <div class="industry-item">
+              <img
+                src="./img/marketing.jpg"
+                alt="Marketing"
+                class="industry-image"
+              />
+              <h4>Chuyên viên marketing</h4>
+              <p>Xây dựng chiến lược quảng bá, phát triển thương hiệu.</p>
+              <button class="intro-button" data-modal="modal-marketing">
+                Giới thiệu
+              </button>
+            </div>
+            <div class="industry-item">
+              <img src="./img/lgt.jpg" alt="Logistics" class="industry-image" />
+              <h4>Quản lý logistics</h4>
+              <p>Tối ưu chuỗi cung ứng, vận hành kho bãi hiệu quả.</p>
+              <button class="intro-button" data-modal="modal-logistics">
+                Giới thiệu
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="modal" id="modal-frontend">
+      <div class="modal-content">
+        <span class="close-button">×</span>
+        <h3>Lập trình viên Frontend</h3>
+        <p>
+          Ngành lập trình Frontend tập trung vào thiết kế và phát triển giao
+          diện người dùng (UI/UX) cho các ứng dụng web và mobile. Công việc bao
+          gồm sử dụng HTML, CSS, JavaScript và các framework như React, Angular
+          để tạo ra trải nghiệm mượt mà và thân thiện.
+        </p>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-backend">
+      <div class="modal-content">
+        <span class="close-button">×</span>
+        <h3>Kỹ sư Backend</h3>
+        <p>
+          Kỹ sư Backend chịu trách nhiệm phát triển và duy trì hệ thống phía
+          server, cơ sở dữ liệu và API. Họ sử dụng các ngôn ngữ như Python,
+          Java, Node.js và quản lý hệ thống để đảm bảo ứng dụng hoạt động ổn
+          định, bảo mật.
+        </p>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-architecture">
+      <div class="modal-content">
+        <span class="close-button">×</span>
+        <h3>Kiến trúc sư</h3>
+        <p>
+          Kiến trúc sư kết hợp sáng tạo nghệ thuật và kỹ thuật để thiết kế các
+          công trình bền vững, thân thiện môi trường. Họ sử dụng phần mềm như
+          AutoCAD, Revit để lên kế hoạch và hiện thực hóa các dự án nhà ở, đô
+          thị.
+        </p>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-finance">
+      <div class="modal-content">
+        <span class="close-button">×</span>
+        <h3>Chuyên viên tài chính</h3>
+        <p>
+          Chuyên viên tài chính phân tích dữ liệu, quản lý ngân sách và lập kế
+          hoạch đầu tư. Họ làm việc trong các lĩnh vực như ngân hàng, chứng
+          khoán, bảo hiểm, giúp doanh nghiệp tối ưu hóa nguồn lực tài chính.
+        </p>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-marketing">
+      <div class="modal-content">
+        <span class="close-button">×</span>
+        <h3>Chuyên viên marketing</h3>
+        <p>
+          Chuyên viên marketing xây dựng chiến lược quảng bá thương hiệu, nghiên
+          cứu thị trường và quản lý các chiến dịch quảng cáo. Họ sử dụng công cụ
+          phân tích và sáng tạo nội dung để thu hút khách hàng.
+        </p>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-logistics">
+      <div class="modal-content">
+        <span class="close-button">×</span>
+        <h3>Quản lý logistics</h3>
+        <p>
+          Quản lý logistics tối ưu hóa quy trình vận chuyển, kho bãi và chuỗi
+          cung ứng. Ngành này đòi hỏi kỹ năng phân tích và ứng dụng công nghệ để
+          đáp ứng nhu cầu thương mại điện tử và toàn cầu hóa.
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      <div class="contact-info">
+        <h3>Liên hệ với chúng tôi</h3>
+        <div class="contact-container">
+          <div class="contact-left">
+            <p>
+              <i class="fas fa-phone"></i> Số điện thoại:
+              <span class="highlight">+84 963176945</span>
+            </p>
+            <p>
+              <i class="fas fa-envelope"></i> Gmail:
+              <span class="highlight">23050157@student.bdu.edu.vn</span>
+            </p>
+          </div>
+          <div class="social">
+            <a><i class="fab fa-facebook-f"></i></a>
+            <a><i class="fa-brands fa-github"></i></a>
+            <a><i class="fa-brands fa-youtube"></i></a>
+          </div>
+          <div class="contact-right">
+            <p>
+              <i class="fas fa-map-marker-alt"></i> Địa chỉ:
+              <span class="highlight">Phường Hiệp Thành, TDM, BD</span>
+            </p>
+            <p>
+              <i class="fas fa-envelope"></i> Liên hệ:
+              <span class="highlight">contact@nhom10.com</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">© 2025 DuyKhanh. All rights reserved.</div>
+    </footer>
+
+    <script src="./js/home.js"></script>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
